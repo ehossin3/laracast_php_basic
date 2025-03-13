@@ -10,12 +10,14 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="/" class="<?= IsURL('/') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white"
+                        <a href="/" class="<?php echo IsURL('/') ? 'bg-gray-900 text-white' : 'text-gray-300'?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white"
                             aria-current="page">Home</a>
                         <a href="/about"
-                            class="<?= IsURL('/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">About</a>
+                            class="<?php echo IsURL('/about') ? 'bg-gray-900 text-white' : 'text-gray-300'?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">About</a>
+                        <a href="/notes"
+                            class="<?php echo IsURL('/notes') ? 'bg-gray-900 text-white' : 'text-gray-300'?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Notes</a>
                         <a href="/contact"
-                            class="<?= IsURL('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Contact</a>
+                            class="<?php echo IsURL('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300'?> rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 hover:text-white">Contact</a>
                     </div>
                 </div>
             </div>
